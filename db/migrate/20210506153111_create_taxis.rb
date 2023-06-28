@@ -1,6 +1,10 @@
 class CreateTaxis < ActiveRecord::Migration[6.1]
   def change
     create_table :taxis do |t|
+      t.string  :car_plate
+      t.string  :driver_name
+      t.string  :made
+
 
       t.timestamps
     end
